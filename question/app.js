@@ -40,10 +40,13 @@ let playerList = [
 console.log(playerList[1].favorites[1]);
 
 // Q5
-const totalage = playerList[0].age + playerList[1].age + playerList[2].age;
-const averageage = totalage / playerList.length;
 
-console.log(averageage);
+let totalAge = 0;
+for (let i = 0; i < playerList.length; i++) {
+    totalAge += playerList[i].age;
+}
+const averageAge = totalAge / playerList.length;
+console.log(averageAge);
 
 
 // Q6
@@ -92,10 +95,10 @@ const RemainderValue = remainder(5, 3);
 console.log(`5 を 3 で割った余りは ${RemainderValue} です。`);
 
 // Q10
-function foo() {
-    let x = 1;
-}
-console.log(x);
+// function foo() {
+//     let x = 1;
+// }
+// console.log(x);
 
 //foo関数の内部で宣言された変数(x)はローカル変数となり、関数の外部からは参照できないため、エラーが発生する。
 
