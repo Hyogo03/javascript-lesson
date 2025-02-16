@@ -140,12 +140,9 @@ for (let i = 0; i < mixed.length; i++) {
     const element = mixed[i];
     
     if (typeof element === 'number') {
-        if (element % 2 == 0) {
-            console.log(element+' even');
-        } else {
-            console.log(element+' odd');
-        }
+        console.log(element % 2 === 0 ? element + ' even' : element + ' odd');
     }else {
         console.log(element+' not a number');
     }
 }
+
